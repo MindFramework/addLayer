@@ -1,4 +1,4 @@
-## What is mindLoad ?
+## What is addLayer ?
 
 It serves to add the specified layers to the place where they are run. It takes two parameters, and both can be specified as `string` and `array` type. It is also possible to specify the layers you want to run first as the second parameter. 
 
