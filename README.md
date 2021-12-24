@@ -57,9 +57,9 @@ The index layer with the manually created model is added.
 ---
 
 ### Dependencies
-1. [layerMaker 1.0.1](https://github.com/aliyilmaz/layerMaker)
+1. [policyMaker 1.0.0](https://github.com/aliyilmaz/policyMaker)
 
 ---
 
 ### License
-Instructions and files in this directory are shared under the [GPL3](https://github.com/aliyilmaz/getOS/blob/main/LICENSE) license.
+Instructions and files in this directory are shared under the [GPL3](https://github.com/aliyilmaz/addLayer/blob/main/LICENSE) license.

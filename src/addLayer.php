@@ -41,17 +41,17 @@ class addLayer extends Mind
 
         // All layers are run sequentially
         foreach ($layers as $key => $layer) {
-            $tempLayers[$key] = self::aliyilmaz('layerMaker')->layerMaker($layer);
+            $tempLayers[$key] = self::aliyilmaz('wayMaker')->wayMaker($layer);
         }
 
         // Layers are being processed
         foreach ($tempLayers as $layer) {
             
             // Checking for layer existence
-            if(file_exists($layer['layer'].$ext)) require_once($layer['layer'].$ext);
+            if(file_exists($layer['way'].$ext)) require_once($layer['way'].$ext);
             
             // The class name is extracted from the layer path
-            $className = $this->getLayerClassName($layer['layer']);
+            $className = $this->getWayClassName($layer['way']);
 
             // If the class exists, it is assigned to the variable
             if(class_exists($className)){ $class = new $className(self::$conf);
@@ -65,7 +65,7 @@ class addLayer extends Mind
 
      }
 
-     public function getLayerClassName($layer){
-         return basename($layer);
+     public function getWayClassName($way){
+         return basename($way);
      }
 }
